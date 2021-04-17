@@ -2,8 +2,8 @@ const { readFile, writeFile } = require('fs').promises;
 const path = require('path');
 
 class Store {
-    constructor() {
-        this.path = path.join(__dirname, `db.json`);
+    constructor(name) {
+        this.path = path.join(__dirname, `${name}.json`);
     }
 
     getAll() {
@@ -23,6 +23,5 @@ class Store {
     }
 }
 
-const notes = new Store('notes');
-
-module.exports = { notes };
+const db = new Store('db');
+module.exports = { db };
