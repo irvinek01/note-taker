@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { notes } = require('../data');
+const { notes } = require('../db');
 
 // This module exports a function which accepts an Express app object and
 // and sets up the api routes.
