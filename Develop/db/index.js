@@ -1,7 +1,7 @@
 const { readFile, writeFile } = require('fs').promises;
 const path = require('path');
 
-class Store {
+class NoteTaker {
     constructor(name) {
         this.path = path.join(__dirname, `${name}.json`);
     }
@@ -23,5 +23,5 @@ class Store {
     }
 }
 
-const db = new Store('db');
-module.exports = { db };
+const noteList = new NoteTaker('db');
+module.exports = { noteList };
