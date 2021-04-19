@@ -41,6 +41,10 @@ body {
   color: #757575;
 }
 
+.borderbottom {
+  border-bottom: 5px dashed #95a5a6;
+}
+
 .list-container .card {
   height: calc(100vh - 70px);
   border-bottom: none;
